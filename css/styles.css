@@ -170,7 +170,7 @@ textarea {
     padding: 188px 0;
     margin: 0 auto;
     background-color: var(--c-background-bright);
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-people-office.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg_mob.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -898,6 +898,7 @@ color: var(--c-info);
     .ways-to-achieve-icon {
         display: none;
     }
+  
 }
 
 @media screen and (min-width: 321px) and (max-width: 766.98px) {
@@ -949,6 +950,12 @@ margin-bottom: 72px;
     width: 288px;
     padding: 72px 16px 24px;
 }
+}
+
+@media only screen and (min-resolution: 192dpi) {
+    .hero-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg_mob@2x.jpg);
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1156.98px) {
@@ -1019,7 +1026,18 @@ letter-spacing: 0.02em;
     .container-logo {
         margin-bottom: 72px;
     }
+    .hero-section {
+        max-width: 768px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg_tab.jpg);
+    }
 }
+
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
+    .hero-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg_tab@2x.jpg);
+    }
+}
+
 @media screen and (min-width: 1158px) {
     .container {
         max-width: 1158px;
@@ -1056,5 +1074,15 @@ letter-spacing: 0.02em;
     }
     .button-header-menu {
         display: none;
+    }
+    .hero-section {
+        max-width: 1158px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-1_desk.jpg);
+    }
+}
+
+@media only screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+    .hero-section {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-1_desk@2x.jpg);
     }
 }
