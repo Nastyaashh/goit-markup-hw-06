@@ -39,7 +39,6 @@ body {
     display: flex;
     align-items: center;
     max-width: 320px;
-    max-height: 375px;
     margin: 0 auto;
     
 }
@@ -167,7 +166,7 @@ textarea {
 
 /* Hero section */
 .hero-section { 
-    padding: 188px 0;
+    padding: 72px 16px;
     margin: 0 auto;
     background-color: var(--c-background-bright);
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg_mob.jpg);
@@ -251,7 +250,8 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 /* "Ways to achieve goals" section */
 .ways-to-achieve-section {
-    padding: 120px 0;
+    padding: 96px 16px;
+   
 }
 .ways-list {
     display: flex;
@@ -473,7 +473,6 @@ max-width: 264px;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 text-decoration: none;
-margin-right: 76px;
     margin-bottom: 16px;
 }
 .footer-container {
@@ -955,6 +954,12 @@ margin-bottom: 72px;
     width: 288px;
     padding: 72px 16px 24px;
 }
+.footer-logo {
+    padding-left: 87px;
+}
+.policy-link {
+    padding-left: 16px;
+}
 }
 
 @media only screen and (min-resolution: 192dpi) {
@@ -1012,6 +1017,7 @@ margin-bottom: 72px;
     }
     .hero-section {
         max-width: 768px;
+        padding: 112px 136px;
     }
     .visually-hidden-link {
         font-family: Roboto;
@@ -1035,6 +1041,16 @@ letter-spacing: 0.02em;
         max-width: 768px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg_tab.jpg);
     }
+    .ways-to-achieve-section {
+        padding: 96px 16px;
+    }
+    .portfolio-photo {
+        width: 356px;
+        height: 300px;
+       }
+       .footer-logo {
+        margin-right: 76px;
+       }
 }
 
 @media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
@@ -1049,6 +1065,7 @@ letter-spacing: 0.02em;
     }
     .hero-section {
         max-width: 1158px;
+        padding: 188px 0;
     }
     .header-link {
         width: calc((100% - 72px) / 4);
@@ -1084,7 +1101,16 @@ letter-spacing: 0.02em;
         max-width: 1158px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-1_desk.jpg);
     }
-   
+    .ways-to-achieve-section {
+        padding: 120px 0;
+    }
+   .portfolio-photo {
+    width: 360px;
+    height: 300px;
+   }
+   .footer-logo {
+    margin-right: 76px;
+   }
 }
 
 @media only screen and (min-width: 1158px) and (min-resolution: 192dpi) {

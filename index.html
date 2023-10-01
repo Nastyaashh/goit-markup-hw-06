@@ -29,6 +29,11 @@
                    <a class="logo-link" href="">Contacts</a> 
                 </li>
             </ul>
+            <button class="button-header-menu">
+                <svg class="button-menu-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-menu"></use>
+                </svg>
+            </button>
         </nav>
         <address>
             <ul class="address-list">
@@ -41,11 +46,7 @@
             </ul>
         </address>
     </div> 
-    <button class="button-header-menu">
-        <svg class="button-menu-icon" width="24" height="24">
-            <use href="./images/icons.svg#icon-menu"></use>
-        </svg>
-    </button>
+    
     </header> 
 
     <main>
@@ -277,9 +278,9 @@
                 <ul class="portfolio-list">
                     <li class="portfolio-item">
                         <div class="portfolio-image">
-                        <img 
+                        <img class="portfolio-photo"
                         srcset="./images/banking-app-1.jpg 1x, ./images/banking-app-1@2x.jpg 2x"
-                        src="./images/banking-app-1.jpg" alt="Banking app" width="360" height="300">
+                        src="./images/banking-app-1.jpg" alt="Banking app" width="288" height="280">
                         <p class="portfolio-about">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                         </div>
                         <div class="item-text">
@@ -289,9 +290,9 @@
                     </li>
                     <li class="portfolio-item">
                         <div class="portfolio-image">
-                        <img 
+                        <img class="portfolio-photo"
                         srcset="./images/cashless-payment-1.jpg 1x, ./images/cashless-payment-1@2x.jpg 2x"
-                        src="./images/cashless-payment-1.jpg" alt="Cashless payment" width="360" height="300">
+                        src="./images/cashless-payment-1.jpg" alt="Cashless payment" width="288" height="280">
                             <p class="portfolio-about">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                         </div>
                         <div class="item-text">
@@ -301,9 +302,9 @@
                     </li>
                     <li class="portfolio-item">
                         <div class="portfolio-image">
-                        <img
+                        <img class="portfolio-photo"
                         srcset="./images/meditation-app-1.jpg 1x, ./images/meditation-app-1@2x.jpg 2x"
-                        src="./images/meditation-app-1.jpg" alt="Meditation app" width="360" height="300">
+                        src="./images/meditation-app-1.jpg" alt="Meditation app" width="288" height="280">
                         <p class="portfolio-about">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                         </div>
                         <div class="item-text">
@@ -313,9 +314,9 @@
                     </li>
                     <li class="portfolio-item">
                         <div class="portfolio-image">
-                        <img 
+                        <img class="portfolio-photo"
                         srcset="./images/taxi-service-1.jpg 1x, ./images/taxi-service-1@2x.jpg 2x"
-                        src="./images/taxi-service-1.jpg" alt="Taxi service" width="360" height="300">
+                        src="./images/taxi-service-1.jpg" alt="Taxi service" width="288" height="280">
                         <p class="portfolio-about">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                         </div>
                         <div class="item-text">
@@ -325,9 +326,9 @@
                     </li>
                     <li class="portfolio-item">
                         <div class="portfolio-image">
-                        <img 
+                        <img class="portfolio-photo"
                         srcset="./images/screen-illustrations-1.jpg 1x, ./images/screen-illustrations-1@2x.jpg 2x"
-                        src="./images/screen-illustrations-1.jpg" alt="Screen illustrations" width="360" height="300">
+                        src="./images/screen-illustrations-1.jpg" alt="Screen illustrations" width="288" height="280">
                         <p class="portfolio-about">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                         </div>
                         <div class="item-text">
@@ -337,9 +338,9 @@
                     </li>
                     <li class="portfolio-item">
                         <div class="portfolio-image">
-                        <img 
+                        <img class="portfolio-photo"
                         srcset="./images/online-courses-1.jpg 1x, ./images/online-courses-1@2x.jpg 2x"
-                        src="./images/online-courses-1.jpg" alt="Online courses" width="360" height="300">
+                        src="./images/online-courses-1.jpg" alt="Online courses" width="288" height="280">
                         <p class="portfolio-about">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
                         </div>
                         <div class="item-text">
@@ -414,7 +415,7 @@
     </footer> 
     
     <!-- Modal -->
-    <div class="backdrop is-hidden">
+    <div class="backdrop is-open">
         <div class="modal">
             <button class="modal-close" type="button">
                 <svg class="cross-icon" width="8" height="8">
@@ -483,7 +484,7 @@
             </div>
 
 <!-- Mobile menu -->
-<div class="menu-container is-hidden">
+<div class="menu-container is-open">
     <button class="mobile-menu-button">
         <svg class="mobile-menu-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-cross"></use>
