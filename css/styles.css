@@ -935,8 +935,16 @@ color: var(--c-brand);
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
     .container {
-        max-width: 320px;
-        padding: 0;
+     max-width: 320px;
+        padding: 0 16px;
+    }
+    .hero-container {
+        padding: 72px 16px;
+    }
+    .container-team {
+    margin: 0 auto;
+    padding: 0 15px;
+        width: 296px;
     }
     .visually-hidden-link {
         text-align: center;
@@ -958,9 +966,13 @@ margin-bottom: 72px;
    .container-logo {
     margin-bottom: 72px;
    }
-   .logo {
-    padding: 17.5px 16px;
+   .ways-to-achieve-section {
+    padding: 96px 0;
    }
+   .ways-to-achieve-list {
+     margin-bottom: 0;
+   }
+ 
    .socials-footer {
     text-align: center;
    }
@@ -981,19 +993,30 @@ margin-bottom: 72px;
     padding: 72px 16px 24px;
 }
 .footer {
-    padding: 96px 16px;
+    padding: 96px 0;
 }
 .footer-logo {
-    padding-left: 87px;
+    transform: translateX(80px);
 }
 .policy-link {
     padding-left: 16px;
 }
 .section-team {
-    padding: 96px 28px;
+    padding: 96px 0;
 }
 .portfolio-section {
-    padding: 96px 16px;
+    padding: 96px 0;
+}
+.team-socials-list-footer-menu {
+    position: absolute;
+    bottom: 5%;
+}
+.mobile-contacts {
+    position: absolute;
+    bottom: 5%;
+}
+.mobile-menu-list {
+    position: relative;
 }
 }
 
@@ -1006,24 +1029,29 @@ margin-bottom: 72px;
 @media screen and (min-width: 768px) and (max-width: 1156.98px) {
     .container {
         max-width: 768px;
-        padding: 0;
+        padding: 0 16px;
     }
     .header-container {
         padding: 0 15px;
     }
+    .header-link {
+        margin-bottom: 0;
+    }
     .portfolio-item {
         width: calc((100% - 24px) / 2);
     }
+
     .portfolio-section {
-        padding: 96px 16px;
+        padding: 96px 0;
     }
     .ways-list {
         flex-direction: row;
         flex-wrap: wrap;
+        column-gap: 24px;
+    row-gap: 72px;
     }
     .ways-to-achieve-list {
         width: calc((100% - 24px) / 2);
-        margin-bottom: 72px;
     }
     .visually-hidden-link {
         text-align: left;
@@ -1062,7 +1090,7 @@ margin-bottom: 72px;
     }
     .hero-section {
         max-width: 768px;
-        padding: 112px 136px;
+        padding: 112px 0;
     }
     .visually-hidden-link {
         font-family: Roboto;
@@ -1088,20 +1116,19 @@ letter-spacing: 0.02em;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg_tab.jpg);
     }
     .ways-to-achieve-section {
-        padding: 96px 16px;
+        padding: 96px 0;
     }
-    .portfolio-photo {
-        width: 356px;
-        height: 300px;
-       }
        .footer-logo {
         margin-right: 76px;
        }
        .section-team {
         padding: 96px 108px;
        }
-       .header-link {
-        margin-bottom: 64px;
+       .section-team {
+        padding: 96px 0;
+       }
+       .team-list {
+        row-gap: 64px;
        }
 }
 
@@ -1138,11 +1165,14 @@ letter-spacing: 0.02em;
     .container-logo {
         margin-right: 120px;
     }
-    .footer-label {
-        margin-left: 80px;
-    }
     .footer-form {
         flex-direction: row;
+    }
+    .footer-modal-heading {
+        padding: 0;
+    }
+    .modal-footer {
+        margin-left: 80px;
     }
     .socials-footer {
         text-align: left;
@@ -1157,10 +1187,6 @@ letter-spacing: 0.02em;
     .ways-to-achieve-section {
         padding: 120px 0;
     }
-   .portfolio-photo {
-    width: 360px;
-    height: 300px;
-   }
    .footer-logo {
     margin-right: 76px;
    }
