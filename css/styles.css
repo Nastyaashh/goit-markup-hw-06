@@ -1148,6 +1148,7 @@ letter-spacing: 0.02em;
         padding: 188px 0;
     }
     .header-link {
+        max-width: 264px;
         width: calc((100% - 72px) / 4);
     }
     .portfolio-item {
